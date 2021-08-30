@@ -18,7 +18,7 @@ Add this command to composer.json file and update composer in CMD
 
 ### Copy the paypal.php class
 
-Copy the paypal.php file and add into config directory of project
+Copy the paypal.php file from repository and add into config directory of project
 
 
 ### Set Credentials in env file
