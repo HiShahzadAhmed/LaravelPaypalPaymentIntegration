@@ -214,7 +214,7 @@ Your Controller will be something like this with methods
 namespace App\Http\Controllers;
   
 use Illuminate\Http\Request;
-use App\Traits\SearchModel; //ADD NEWLY CREATED TRAIT NAMESPACE
+use App\Traits\PaypalPayment; //ADD NEWLY CREATED TRAIT NAMESPACE
 
 
 class PaymentController extends Controller
@@ -253,10 +253,6 @@ class PaymentController extends Controller
     {
         return 'You've cancelled the transaction';
     }
-
-    
-    
-    
 
 }
 ```
