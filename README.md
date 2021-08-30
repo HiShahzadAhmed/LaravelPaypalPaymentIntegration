@@ -192,9 +192,9 @@ trait PaypalPayment{
 
 
 
-### Preparing your Routes & Controller for searching
+### Preparing your Routes & Controller
 
-You'll need to create methods to link from web.php file for searching. Make a route e.g.
+You'll need to create methods to link from web.php file. Make a route e.g.
 
 ```bash
 
