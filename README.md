@@ -162,7 +162,7 @@ trait PaypalPayment{
 
 
 
-    public function paypalPaymentSuceess($request)
+    public function paypalPaymentCheckoutSuceess($request)
     {
 
         $payment_id = Session::get('paypal_payment_id');
@@ -239,7 +239,7 @@ class PaymentController extends Controller
     public function paypalPaymentSuccess(Request $request)
     {   
 
-         $response = $this->paypalPaymentSuceess($request->all());
+         $response = $this->paypalPaymentCheckoutSuceess($request->all());
 
         if ($response->getState() == 'approved') 
         {
