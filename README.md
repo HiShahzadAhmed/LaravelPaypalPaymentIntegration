@@ -80,7 +80,7 @@ trait PaypalPayment{
 
 
 
-    public function makePaypalCheckout($data)
+    public function paypalPaymentCheckout($data)
     {
 
 
@@ -233,7 +233,7 @@ class PaymentController extends Controller
                 'cancel_url'        => route('payment.paypal.cancel')  // PASS THE CANCEL RESPONSE ROUTE NAME
             ];
             
-            return $this->makePaypalCheckout($data);        
+            return $this->paypalPaymentCheckout($data);        
     }
     
     public function paypalPaymentSuccess(Request $request)
