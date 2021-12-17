@@ -63,7 +63,7 @@ use PayPal\Auth\OAuthTokenCredential;
 
 
 
-trait PaypalPayment{
+trait PayPalPayment{
    
     private $_api_context;
 
@@ -214,12 +214,12 @@ Your Controller will be something like this with methods
 namespace App\Http\Controllers;
   
 use Illuminate\Http\Request;
-use App\Traits\PaypalPayment; //ADD NEWLY CREATED TRAIT NAMESPACE
+use App\Traits\PayPalPayment; //ADD NEWLY CREATED TRAIT NAMESPACE
 
 
 class PaymentController extends Controller
 {
-    use PaypalPayment; //CALL THE TRAIT IN CONTROLLER
+    use PayPalPayment; //CALL THE TRAIT IN CONTROLLER
     
     public function makePaypalCheckout()
     {
